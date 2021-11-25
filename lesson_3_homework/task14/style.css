@@ -1,0 +1,30 @@
+table{
+    table-layout: fixed;
+    width: 200px;
+    height: 200px;
+    border-collapse: collapse;
+}
+.blue{
+    background-color: blue;
+}
+.red{
+    background-color: red;
+}
+.br{
+    border-radius: 50%;
+}
+.br-top{
+    border-radius: 50% 50% 0 0;
+}
+.br-bottom{
+    border-radius: 0 0 50% 50%;
+}
+.br-right{
+    border-radius: 0 50% 50% 0;
+}
+.br-left-top{
+    border-radius: 50% 0 0 0;
+}
+.br-left-bottom{
+    border-radius: 0 0 0 50%;
+}

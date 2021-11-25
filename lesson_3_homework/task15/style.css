@@ -1,0 +1,8 @@
+div{
+    width: 300px;
+    height: 200px;
+    background-color: black;
+    background-image: url("../task1/img/images.jpg");
+    background-repeat: space;
+    background-size: 25%;
+}

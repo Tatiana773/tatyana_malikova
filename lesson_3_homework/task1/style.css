@@ -1,0 +1,25 @@
+body{
+    background-image: url("./img/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+p{
+    font-weight: bold;
+    line-height: 20px;
+    font-size: 16px;
+}
+.number-color{
+    color: #317931;
+}
+.color{
+    color: crimson;
+}
+.rgb{
+    color: rgb(0, 88, 139);
+}
+.hsl{
+    color: hsl(340, 100%, 30%)
+}
+.alpha{
+    color: rgba(236, 137, 15, 0.678);
+}

@@ -1,0 +1,13 @@
+div{
+    margin: 100px auto;
+    width: 400px;
+    height: 200px;
+    background-image: url("../task1/img/images.jpg");
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: -40px -40px 15px 10px red,
+                40px 40px 15px 10px blue,
+                40px -40px 15px 10px green inset,
+                -40px 40px 15px 10px black inset;;
+}
