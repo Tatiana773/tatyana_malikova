@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5 Свойство display</title>
+    <style>
+        span, div div {
+            border: solid 2px black;
+            width: 50px;
+            height: 50px;
+        }
+        .list{
+            display: list-item;
+            list-style-type: upper-latin;
+            margin-left: 20px;
+        }
+        .block{
+            display: block;
+        }
+        .inline{
+            display: inline;
+        }
+        .inline-block{
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="list">
+        <span>Текст</span>
+        <span class="block">Текст</span>
+        <span>Текст</span>
+    </div>
+    <div class="list">
+        <div>Текст</div>
+        <div class="inline">Текст</div>
+        <div>Текст</div>
+    </div>
+    <div class="list">
+        <span>Текст</span>
+        <span class="inline-block">Текст</span>
+        <span>Текст</span>
+    </div>
+</body>
+</html>

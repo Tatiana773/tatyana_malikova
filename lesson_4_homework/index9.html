@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 9 Позиционирование</title>
+    <style>
+        ul{
+            list-style-type: none;
+            display: inline-block;
+        }
+        .inner{
+            background-color: red;
+            display: none;
+        }
+        .outer li:hover .inner{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <ul class="outer">
+        <li>Уровень 1</li>
+        <li >
+            Уровень 1
+            <ul class="inner">
+                <li>Уровень 2</li>
+                <li>Уровень 2</li>
+            </ul>
+        </li>
+        <li>Уровень 1</li>
+    </ul>
+</body>
+</html>

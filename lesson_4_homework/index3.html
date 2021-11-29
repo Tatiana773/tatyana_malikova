@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3 Вложенные плавающие блоки</title>
+    <style>
+        div{
+            color: white;
+        }
+        .width{
+            width: 30%;
+        }
+        .float-left{
+            float: left;
+        }
+        .float-right{
+            float: right;
+        }
+        .margin-left{
+           margin-left: 30%; 
+        }
+        .margin-right{
+            margin-right: 30%;
+        }
+    </style>
+</head>
+<body>
+    <div class="width float-left" style="background-color: #F00;">1</div>
+    <div class="margin-left" style="background-color: #0F0;">
+        <div class="width float-right" style="background-color: #00F;">2</div>
+        <div class="margin-right" style="background-color: #000;">
+            <div class="width float-right" style="background-color: #F0F;">3</div>
+            <div class="width float-left" style="background-color: #0FF;">3<br />3</div>
+            <div class="margin-left margin-right" style="background-color: #FF0;">3<br />3<br/>3</div>
+        </div>
+    </div>
+</body>
+</html>
