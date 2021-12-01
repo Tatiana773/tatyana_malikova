@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    width: 600px;
+    height: 150px;
+    border: 2px solid black;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap-reverse;
+}
+[class|="item"]{
+    width: 45%;
+    height: 30px;
+    margin: 5px;
+    border: 2px solid black;
+}
+.item-1{
+    order: 3;
+}
+.item-2{
+    order: 2;
+}
+.item-3{
+    order: 1;
+}
+.item-4{
+    order: 4;
+}
+.item-5{
+    order: 5;
+}

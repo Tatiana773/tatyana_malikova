@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    width: 600px;
+    height: 200px;
+    border: 2px solid black;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+[class|="item"]{
+    border: 2px solid black;
+    flex-basis: auto
+}
+.item-1{
+    align-self: flex-start;
+}
+.item-2, .item-4{
+    align-self: center;
+}
+.item-3{
+    align-self: flex-start;
+    width: 100%;
+}
+.item-5{
+    align-self: flex-end;
+}
