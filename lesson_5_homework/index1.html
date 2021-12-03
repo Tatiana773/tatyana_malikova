@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1 Управление элементами</title>
+    <style>
+        div {
+        padding: 5px;
+        border: 2px solid black;
+        margin: 5px;
+        }
+        .flex-container{
+            display: flex;
+            flex-direction: row;
+        }
+        .flex-container div{
+            flex-basis: 100px;
+        }
+        @media(max-width: 400px){
+            .flex-container div:nth-child(even){
+                flex-shrink: 3;
+            }
+            .flex-container div:nth-child(odd){
+                flex-shrink: 1;
+            }
+        }
+        @media(min-width: 600px){
+            .grow{
+                flex-grow: 3;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div>Flex item 1</div>
+        <div>Flex item 2</div>
+        <div class="grow">Flex item 3</div>
+        <div class="grow">Flex item 4</div>
+    </div>
+</body>
+</html>
