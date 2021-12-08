@@ -1,0 +1,29 @@
+@import "mixin";
+@import "variables";
+body{
+    @include body-font;
+}
+h1, h2, h3, h4, h5{
+    @include title-font;
+}
+@import 'header';
+main{
+    margin: 1% 0;
+    .discount_title{
+        margin: 1% 0;
+        border-bottom: 1px solid $bottom-line;
+    }
+    .discount_content{
+        p{
+        text-align: center;
+        line-height: 30px;
+        font-weight: bold;
+        font-style: italic;
+        color: $bg-color
+        }
+        p:nth-child(odd){
+            color: $bottom-line;
+        }
+    }
+}
+@import 'footer';

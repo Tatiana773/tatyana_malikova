@@ -1,0 +1,46 @@
+@import "mixin";
+@import "variables";
+footer{
+    @include title-font;
+    background-color: $bg-color;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5%;
+    div{
+        margin: 1% 0;
+    }
+    .about a{
+        text-decoration: none;
+        color: $white;
+    }
+    .social-text{
+        text-align: center;
+    }
+    .social{
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        .fb{
+            background: url("../images/icons/fb.png");
+        }
+        .insta{
+            background: url("../images/icons/insta.png");
+        }
+        .mail{
+            background: url("../images/icons/mail.png");
+        }
+        .fb, .insta, .mail{
+            width: 50px;
+            height: 50px;
+           background-size: cover; 
+           margin-right: 1%;
+        }
+    }
+    .mailing{
+        width: 70%;
+    }
+}

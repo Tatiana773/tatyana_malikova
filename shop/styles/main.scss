@@ -1,0 +1,18 @@
+@import "mixin";
+@import "variables";
+body{
+    @include body-font;
+}
+h1, h2, h3, h4, h5{
+    @include title-font;
+}
+@import 'header';
+
+main{
+    margin: 1% 0;
+    .recommend_title{
+        margin: 1% 0;
+    }
+}
+@import 'footer';
+

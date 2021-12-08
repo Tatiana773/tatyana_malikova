@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'PT_Sans';
+    src: url("../fonts/PT_Sans/PTSans-Regular.ttf");
+}
+@font-face {
+    font-family: 'Exo_2';
+    src: url("../fonts/Exo_2/Exo2-VariableFont_wght.ttf");
+}
+@mixin body-font {
+    font-family: 'PT_Sans';
+}
+@mixin title-font{
+    font-family: 'Exo_2';
+}

@@ -1,0 +1,232 @@
+@font-face {
+  font-family: 'PT_Sans';
+  src: url("../fonts/PT_Sans/PTSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Exo_2';
+  src: url("../fonts/Exo_2/Exo2-VariableFont_wght.ttf");
+}
+
+body {
+  font-family: 'PT_Sans';
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Exo_2';
+}
+
+@font-face {
+  font-family: 'PT_Sans';
+  src: url("../fonts/PT_Sans/PTSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Exo_2';
+  src: url("../fonts/Exo_2/Exo2-VariableFont_wght.ttf");
+}
+
+header {
+  font-family: 'Exo_2';
+  background: url("../images/main-banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 500px;
+  position: relative;
+}
+
+header .header_categories {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  width: 90%;
+}
+
+header .header_categories ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style-type: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header_categories ul li {
+  padding-right: 25px;
+}
+
+header .header_categories ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header .header_categories ul li a img {
+  margin-right: 10px;
+}
+
+header .header_categories ul li a:active {
+  color: #ff6600;
+}
+
+header .header_categories ul li .current {
+  color: #ff6600;
+}
+
+.carousel_content {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  width: 60%;
+  height: 20%;
+}
+
+@media (max-width: 450px) {
+  .header_categories ul li {
+    padding-left: 3%;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  .carousel_content {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .header_categories ul li {
+    padding-left: 8%;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  .carousel_content {
+    display: none;
+  }
+}
+
+main {
+  margin: 1% 0;
+}
+
+main .busket_title {
+  margin: 1% 0;
+  border-bottom: 1px solid #5c0606;
+}
+
+main .busket_content p {
+  text-align: center;
+  line-height: 30px;
+  font-weight: bold;
+  font-style: italic;
+  color: #343a40;
+  padding: 5%;
+}
+
+main .busket_content .busket_buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main .busket_content .busket_buttons a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@font-face {
+  font-family: 'PT_Sans';
+  src: url("../fonts/PT_Sans/PTSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Exo_2';
+  src: url("../fonts/Exo_2/Exo2-VariableFont_wght.ttf");
+}
+
+footer {
+  font-family: 'Exo_2';
+  background-color: #343a40;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5%;
+}
+
+footer div {
+  margin: 1% 0;
+}
+
+footer .about a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer .social-text {
+  text-align: center;
+}
+
+footer .social {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .social .fb {
+  background: url("../images/icons/fb.png");
+}
+
+footer .social .insta {
+  background: url("../images/icons/insta.png");
+}
+
+footer .social .mail {
+  background: url("../images/icons/mail.png");
+}
+
+footer .social .fb, footer .social .insta, footer .social .mail {
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  margin-right: 1%;
+}
+
+footer .mailing {
+  width: 70%;
+}
+/*# sourceMappingURL=busket.css.map */

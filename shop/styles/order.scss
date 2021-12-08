@@ -1,0 +1,68 @@
+@import "mixin";
+@import "variables";
+body{
+    @include body-font;
+}
+h1, h2, h3, h4, h5{
+    @include title-font;
+}
+@import 'header';
+main{
+    margin: 1% 0;
+    padding: 1%;
+    .delivery_data{
+        margin: 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        .client_info{
+            margin-bottom: 1%;
+        }
+        .products{
+            h2, table{
+                text-align: center;
+                border-bottom: 2px solid $bottom-line;
+                margin-bottom: 1%;
+            }
+            table{
+                width: 100%;
+                max-width: 100%;
+                empty-cells: show;
+                .product_data td{
+                    text-align: start;
+                }
+                .product_data td img{
+                    width: 50%;
+                }
+                .product_data td:nth-child(2){
+                    width: 20%;
+                }
+            }
+        }
+        .delivery_order{
+            width: 70%;
+            
+            h2{
+                text-align: center;
+            }
+             form{
+                 padding-left: 1%;
+                label{
+                    font-weight: bold;
+                    display: block;
+                }
+                input, select{
+                    display: block;
+                    border: 2px solid $l-grey;
+                    border-radius: 10px;
+                }
+                select{
+                width: 70%;
+                background-color: $white;
+                }
+        } 
+    }
+    }
+}
+@import 'footer';

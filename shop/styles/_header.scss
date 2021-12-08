@@ -1,0 +1,74 @@
+@import "mixin";
+@import "variables";
+header{
+    @include title-font;
+    background: url("../images/main-banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 500px;
+    position: relative;
+    .header_categories{
+        position: absolute;
+        top:30%;
+        left: 5%;
+        width: 90%;
+        ul{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            list-style-type: none;
+            align-items: center;
+            li{
+                padding-right: 25px;
+                a{
+                    text-decoration: none;  
+                    color: $white;
+                    img{
+                        margin-right: 10px;
+                    }
+                }
+                a:active{
+                    color: $orange;
+                }
+                .current{
+                    color: $orange;
+                }
+            }
+        }
+    }
+}
+.carousel_content{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    width: 60%;
+    height: 20%;
+}
+@media(max-width:450px){
+    .header_categories{
+        ul{
+            li{
+                padding-left: 3%;
+                flex-basis: 50%;
+            }
+        }
+    }
+    .carousel_content{
+        display: none;
+    }
+}
+@media(max-width:991px){
+    .header_categories{
+        ul{
+            li{
+                padding-left: 8%;
+                flex-basis: 50%;
+            }
+        }
+    }
+    .carousel_content{
+        display: none;
+    }
+}

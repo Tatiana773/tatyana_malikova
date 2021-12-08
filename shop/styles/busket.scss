@@ -1,0 +1,39 @@
+@import "mixin";
+@import "variables";
+body{
+    @include body-font;
+}
+h1, h2, h3, h4, h5{
+    @include title-font;
+}
+@import 'header';
+main{
+    margin: 1% 0;
+    .busket_title{
+        margin: 1% 0;
+        border-bottom: 1px solid $bottom-line;
+    }
+    .busket_content{
+        p{
+        text-align: center;
+        line-height: 30px;
+        font-weight: bold;
+        font-style: italic;
+        color: $bg-color;
+        padding: 5%
+        }
+        .busket_buttons{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            flex-basis: 30%;
+            justify-content: space-around;
+            a{
+                text-decoration: none;
+                color: $white;
+            }
+        }
+    }
+}
+@import 'footer';
+

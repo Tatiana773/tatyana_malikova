@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Кодировка веб-страницы -->
+    <meta charset="utf-8">
+    <!-- Настройка viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza</title>
+    
+    <!-- Подключаем Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles/products.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+            <a class="navbar-brand ml-4" href="./main.html"><img src="./images/PicsArt_12-07-07.48.48.png" style="width: 150px; height: 75px" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarList" area-expand="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarList" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-5">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./delivery.html">Доставка</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./discount.html">Акции</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./contacts.html">Контакты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./busket.html">Корзина</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="header_categories">
+            <ul>
+                <li>
+                    <a href="./pizza.html" class="current"><img src="./images/icons/menu-item1.png" alt="pizza">Пицца</a>
+                </li>
+                <li>
+                    <a href="./burger.html"><img src="./images/icons/menu-item2.png" alt="burger">Бургер</a>
+                </li>
+                <li>
+                    <a href="./set.html"><img src="./images/icons/menu-item9.png" alt="set">Сет</a>
+                </li>
+                <li>
+                    <a href="./roll.html"><img src="./images/icons/menu-item10.png" alt="roll">Рол</a>
+                </li>
+                <li>
+                    <a href="./snack.html"><img src="./images/icons/menu-item6.png" alt="snacks">Закуски</a>
+                </li>
+                <li>
+                    <a href="./salad.html"><img src="./images/icons/menu-item4.png" alt="salad">Салат</a>
+                </li>
+                <li>
+                    <a href="./soup.html"><img src="./images/icons/menu-item5.png" alt="soup">Суп</a>
+                </li>
+                <li>
+                    <a href="./drinks.html"><img src="./images/icons/menu-item7.png" alt="drink">Напитки</a>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="carousel_content">
+            <div class="carousel slide " data-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active" data-slide-to="1">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiJWtscYaog0lcb1cNoKixwXrfOtuHpUxM-A&usqp=CAU" class="w-50 img-fluid" alt="slide-pizza">
+                </div>
+                <div class="carousel-item" data-slide-to="2">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGB_ptB8MnHRTJ2qF8NOkzqB9GkxHnLTfkkw&usqp=CAU" class="w-47 img-fluid" alt="slide-burger">
+                </div>
+                <div class="carousel-item"data-slide-to="0">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSizM672yJ2efUgxIWa9Uab4L9b2yAm_UPY1g&usqp=CAU" class="w-50 img-fluid" alt="slide-roll">
+                </div>
+                </div>
+          </div>
+        </div>
+
+    </header>
+    <main>
+        <div class="dishes">
+            <div class="container">
+                <div class="row card_list">
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                        <div class="card border-0 text-center">
+                            <img src="./images/pizza/1.jpg" alt="pizza-1" class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="card-title">Пицца Маргарита</h3>
+                                <p class="card-text overflow-auto description">Фирменный томатный соус с базиликом, помидоры, двойная порция сыра Моцареллы, орегано.</p>
+                                <div class="size_box">
+                                    <input type="radio" name="size1" id="small1" value="small" checked>
+                                    <label for="small1">30см <br> 90грн</label>
+                                    <input type="radio"  name="size1" id="big1" value="big" >
+                                    <label for="big1">40см <br> 145грн</label>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-outline-danger mt-3">В корзину</a>
+                        </div>
+                        
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                        <div class="card border-0 text-center">
+                            <img src="./images/pizza/15.jpg" alt="pizza-15" class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="card-title">Пицца Пепперони</h3>
+                                <p class="card-text overflow-auto description">Фирменный томатный соус с базиликом, салями пепперони, двойная порция сыра Моцареллы, помидоры, орегано.</p>
+                                <div class="size_box">
+                                    <input type="radio" name="size2" id="small2" value="small" checked>
+                                    <label for="small2">30см <br> 140грн</label>
+                                    <input type="radio"  name="size2" id="big2" value="big" >
+                                    <label for="big2">40см <br> 195грн</label>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-outline-danger mt-3">В корзину</a>
+                        </div>
+                        
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                        <div class="card border-0 text-center">
+                            <img src="./images/pizza/2.jpg" alt="pizza-2" class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="card-title">Пицца Баварская</h3>
+                                <p class="card-text overflow-auto description">Фирменный томатный соус с базиликом, баварские колбаски, салями, ветчина, помидоры, сыр Моцарелла, горчица, соус Барбекю с трюфельным маслом.</p>
+                                <div class="size_box">
+                                    <input type="radio" name="size3" id="small3" value="small" checked>
+                                    <label for="small3">30см <br> 135грн</label>
+                                    <input type="radio"  name="size3" id="big3" value="big" >
+                                    <label for="big3">40см <br> 190грн</label>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-outline-danger mt-3">В корзину</a>
+                        </div>
+                    
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                        <div class="card border-0 text-center">
+                            <img src="./images/pizza/14.jpg" alt="pizza-14" class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="card-title">Пицца Диабло</h3>
+                                <p class="card-text overflow-auto description">Фирменный томатный соус с базиликом, салями, баварские колбаски, сладкий перец, помидоры, острый перец, сыр Моцарелла.</p>
+                                <div class="size_box">
+                                    <input type="radio" name="size4" id="small4" value="small" checked>
+                                    <label for="small4">30см <br> 130грн</label>
+                                    <input type="radio"  name="size4" id="big4" value="big" >
+                                    <label for="big4">40см <br> 185грн</label>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-outline-danger mt-3">В корзину</a>
+                        </div>
+                        
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                        <div class="card border-0 text-center">
+                            <img src="./images/pizza/3.jpg" alt="pizza-3" class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="card-title">Пицца Гавайская</h3>
+                                <p class="card-text overflow-auto description">Фирменный томатный соус с базиликом, ананасы, куриное филе, сыр Моцарелла.</p>
+                                <div class="size_box">
+                                    <input type="radio" name="size5" id="small5" value="small" checked>
+                                    <label for="small5">30см <br> 130грн</label>
+                                    <input type="radio"  name="size5" id="big5" value="big" >
+                                    <label for="big5">40см <br> 185грн</label>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-outline-danger mt-3">В корзину</a>
+                        </div>
+                        
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                        <div class="card border-0 text-center">
+                            <img src="./images/pizza/13.jpg" alt="pizza-13" class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="card-title">Пицца Хантер</h3>
+                                <p class="card-text overflow-auto description">Фирменный томатный соус с базиликом, бекон, салями, грибы, помидоры, сыр Моцарелла, лук.</p>
+                                <div class="size_box">
+                                    <input type="radio" name="size6" id="small6" value="small" checked>
+                                    <label for="small6">30см <br> 130грн</label>
+                                    <input type="radio"  name="size6" id="big6" value="big" >
+                                    <label for="big6">40см <br> 185грн</label>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-outline-danger mt-3">В корзину</a>
+                        </div>
+                        
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                        <div class="card border-0 text-center">
+                            <img src="./images/pizza/4.jpg" alt="pizza-4" class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="card-title">Пицца Сырный цыплёнок</h3>
+                                <p class="card-text overflow-auto description">Фирменный томатный соус с базиликом, куриное филе, помидоры, двойная порция сыра Моцарелла, орегано.</p>
+                                <div class="size_box">
+                                    <input type="radio" name="size7" id="small7" value="small" checked>
+                                    <label for="small7">30см <br> 130грн</label>
+                                    <input type="radio"  name="size7" id="big7" value="big" >
+                                    <label for="big7">40см <br> 185грн</label>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-outline-danger mt-3">В корзину</a>
+                        </div>
+                        
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                        <div class="card border-0 text-center">
+                            <img src="./images/pizza/12.jpg" alt="pizza-12" class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="card-title">Пицца Овощная</h3>
+                                <p class="card-text overflow-auto description">Фирменный томатный соус с базиликом, маслины, перец сладкий, помидоры, грибы, лук, сыр Моцарелла, орегано.</p>
+                                <div class="size_box">
+                                    <input type="radio" name="size8" id="small8" value="small" checked>
+                                    <label for="small8">30см <br> 110грн</label>
+                                    <input type="radio"  name="size8" id="big8" value="big" >
+                                    <label for="big8">40см <br> 165грн</label>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-outline-danger mt-3">В корзину</a>
+                        </div>
+                        
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                        <div class="card border-0 text-center">
+                            <img src="./images/pizza/5.jpg" alt="pizza-5" class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="card-title">Пицца Кантри</h3>
+                                <p class="card-text overflow-auto description">Соус Ранч, ветчина, бекон, грибы, маринованный огурец, лук, чесночный соус, сыр Моцарелла.</p>
+                                <div class="size_box">
+                                    <input type="radio" name="size9" id="small9" value="small" checked>
+                                    <label for="small9">30см <br> 125грн</label>
+                                    <input type="radio"  name="size9" id="big9" value="big" >
+                                    <label for="big9">40см <br> 180грн</label>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-outline-danger mt-3">В корзину</a>
+                        </div>
+                        
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                        <div class="card border-0 text-center">
+                            <img src="./images/pizza/11.jpg" alt="pizza-11" class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="card-title">Пицца Мясная</h3>
+                                <p class="card-text overflow-auto description">Фирменный томатный соус с базиликом, бекон, ветчина, салями, баварские колбаски, помидоры, сыр Моцарелла, орегано.</p>
+                                <div class="size_box">
+                                    <input type="radio" name="size10" id="small10" value="small" checked>
+                                    <label for="small10">30см <br> 145грн</label>
+                                    <input type="radio"  name="size10" id="big10" value="big" >
+                                    <label for="big10">40см <br> 200грн</label>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-outline-danger mt-3">В корзину</a>
+                        </div>
+                        
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                        <div class="card border-0 text-center">
+                            <img src="./images/pizza/6.jpg" alt="pizza-6" class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="card-title">Пицца Четыре сезона</h3>
+                                <p class="card-text overflow-auto description">Фирменный томатный соус с базиликом, салями, ветчина, помидоры, грибы, сыр Фета, сыр Моцарелла, орегано.</p>
+                                <div class="size_box">
+                                    <input type="radio" name="size11" id="small11" value="small" checked>
+                                    <label for="small11">30см <br> 130грн</label>
+                                    <input type="radio"  name="size11" id="big11" value="big" >
+                                    <label for="big11">40см <br> 185грн</label>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-outline-danger mt-3">В корзину</a>
+                        </div>
+                        
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                        <div class="card border-0 text-center">
+                            <img src="./images/pizza/10.jpg" alt="pizza-10" class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="card-title">Пицца Сырная</h3>
+                                <p class="card-text overflow-auto description">Соус сливочный, сыр Пармезан, сыр Фета, двойная порция сыра Моцарелла, орегано.</p>
+                                <div class="size_box">
+                                    <input type="radio" name="size12" id="small12" value="small" checked>
+                                    <label for="small12">30см <br> 135грн</label>
+                                    <input type="radio"  name="size12" id="big12" value="big" >
+                                    <label for="big12">40см <br> 190грн</label>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-outline-danger mt-3">В корзину</a>
+                        </div>
+                        
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                        <div class="card border-0 text-center">
+                            <img src="./images/pizza/7.jpg" alt="pizza-7" class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="card-title">Пицца Оле-Оле</h3>
+                                <p class="card-text overflow-auto description">Фирменный томатный соус с базиликом, бекон, ветчина, баварские колбаски, помидоры, маринованный огурец, лук, сыр Моцарелла, орегано.</p>
+                                <div class="size_box">
+                                    <input type="radio" name="size14" id="small14" value="small" checked>
+                                    <label for="small14">30см <br> 130грн</label>
+                                    <input type="radio"  name="size14" id="big14" value="big" >
+                                    <label for="big14">40см <br> 185грн</label>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-outline-danger mt-3">В корзину</a>
+                        </div>
+                        
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                        <div class="card border-0 text-center">
+                            <img src="./images/pizza/9.jpg" alt="pizza-9" class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="card-title">Пицца Барбекю</h3>
+                                <p class="card-text overflow-auto description">Фирменный томатный соус с базиликом, куриное филе, бекон, грибы, лук, сыр Моцарелла, орегано, соус Барбекю с трюфельным маслом.</p>
+                                <div class="size_box">
+                                    <input type="radio" name="size13" id="small13" value="small" checked>
+                                    <label for="small13">30см <br> 13 грн</label>
+                                    <input type="radio"  name="size13" id="big13" value="big" >
+                                    <label for="big13">40см <br> 190грн</label>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-outline-danger mt-3">В корзину</a>
+                        </div>
+                        
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                        <div class="card border-0 text-center">
+                            <img src="./images/pizza/8.jpg" alt="pizza-8" class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="card-title">Пицца Мексиканская</h3>
+                                <p class="card-text overflow-auto description">Фирменный томатный соус с базиликом, куриное филе, острый перец, болгарский перец, помидоры, грибы, лук, сыр Моцарелла.</p>
+                                <div class="size_box">
+                                    <input type="radio" name="size15" id="small15" value="small" checked>
+                                    <label for="small15">30см <br> 130грн</label>
+                                    <input type="radio"  name="size15" id="big15" value="big" >
+                                    <label for="big15">40см <br> 185грн</label>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-outline-danger mt-3">В корзину</a>
+                        </div>
+                        
+                    </div>
+            
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <h4>+3 (050)888-88-88</h4>
+        <h4>+3 (096)777-77-77</h4>
+        <div class="about">
+            <a href="#">Блог/</a>
+            <a href="#">О компании/</a>
+            <a href="#">Оферта</a>
+        </div>
+        <div class="social">
+            <div class="fb"><a href="#"></a></div>
+            <div class="insta"><a href="#"></a></div>
+            <div class="mail"><a href="#"></a></div>
+        </div>
+        <div class="social-text">Будьте в курсе последних новостей и продуктов</div>
+        <div class="mailing">
+            <div class="container "> 
+                <div class="row ">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                            <button class="btn btn-outline-light" type="button" id="button-addon2">Подписатся</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="payment">
+            <img src="./images/icons/icon-mastercard.png" alt="mastercard">
+            <img src="./images/icons/icon-visa.png" alt="visa">
+        </div>
+    </footer>   
+        
+    
+        
+    
+     
+     <!-- Подключаем jQuery -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     
+     <!-- Подключаем плагин Popper -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+     
+     <!-- Подключаем Bootstrap JS -->
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous" ></script>
+    
+</body>
+</html>
