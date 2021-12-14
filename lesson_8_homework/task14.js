@@ -1,0 +1,1 @@
+alert( null || 2 || undefined ); // выведет 2, т.к. это первое true
