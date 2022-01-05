@@ -1,0 +1,17 @@
+
+function makeCounter() {
+    let count = 0;
+    return function() {
+        return count++;
+    };
+}
+
+let counter = makeCounter();
+let counter2 = makeCounter();
+
+alert( counter() ); // 0
+alert( counter() ); // 1
+alert( counter2() ); // 0
+alert( counter2() ); // 1
+
+// counter2 не зависит от counter и поэтому сработает отдельно.
