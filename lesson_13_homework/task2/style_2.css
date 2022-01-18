@@ -1,0 +1,12 @@
+body {
+  position: relative;
+}
+
+body .note {
+  background-color: darkred;
+  color: #daa520;
+  border: 1px solid blue;
+  padding: 3px;
+  position: absolute;
+}
+/*# sourceMappingURL=style_2.css.map */

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 11</title>
+</head>
+
+<body>
+    <select id="genres">
+        <option value="rock">Рок</option>
+        <option value="blues" selected>Блюз</option>
+    </select>
+    <script>
+        let newOption = new Option("Классика", "classic");
+        genres.append(newOption);
+
+        newOption.selected = true;
+        document.querySelector('#genres').onchange = () => {
+            let selectedOption = genres.options[genres.selectedIndex];
+            console.log(selectedOption.value);
+            console.log(selectedOption.text);
+        }
+    </script>
+</body>
+
+</html>
