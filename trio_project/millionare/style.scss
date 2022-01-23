@@ -1,0 +1,344 @@
+* {
+    box-sizing: border-box;
+}
+
+.game {
+    background-image: url("img/LHc0RaYGI3U.jpg");
+    background-size: cover;
+    .container {
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+    }
+    .info {
+        height: 340px;
+        .first {
+            flex-direction: row;
+            justify-content: center;
+            .logo {
+                width: 60%;
+                background-image: url("https://www.lifepng.com/wp-content/uploads/2020/06/%D0%BA%D1%82%D0%BE-%D1%85%D0%BE%D1%87%D0%B5%D1%82-%D1%81%D1%82%D0%B0%D1%82%D1%8C-%D0%BC%D0%B8%D0%BB%D0%BB%D0%B8%D0%BE%D0%BD%D0%B5%D1%80%D0%BE%D0%BC-png.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                position: relative;
+                .comment {
+                    position: absolute;
+                    top: 60%;
+                    width: 100%;
+                    height: 40%;
+                    background-color: rgb(15, 15, 63);
+                    border: 2px solid goldenrod;
+                    border-radius: 10px;
+                    color: white;
+                    font-size: 18px;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    display: none;
+                }
+            }
+            .help-part {
+                width: 20%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                .help {
+                    width: 74px;
+                    height: 59px;
+                    background-image: url("./img/butt_sprite.webp");
+                    border-radius: 45%;
+                    border: 3px solid goldenrod;
+                }
+                .half {
+                    background-position: -103px -62px;
+                }
+                .public {
+                    background-position: -2px -62px;
+                }
+                .friend {
+                    background-position: -204px -62px;
+                }
+                .help:hover {
+                    opacity: .5;
+                }
+            }
+            .level-part {
+                width: 20%;
+                .level-content {
+                    width: 100%;
+                    box-sizing: border-box;
+                    height: 100%;
+                    padding-top: 20%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    .level {
+                        font-size: 16px;
+                        width: 100%;
+                        padding-left: 20px;
+                        display: flex;
+                        flex-direction: row;
+                        span {
+                            display: block;
+                            color: goldenrod;
+                            margin: 0 4px;
+                        }
+                    }
+                     :nth-child(1) span {
+                        color: white;
+                    }
+                     :nth-child(6) span {
+                        color: white;
+                    }
+                     :nth-child(11) span {
+                        color: white;
+                    }
+                    .level-active {
+                        background-image: url("./img/step_activ.png");
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        font-weight: bold;
+                        .level-number {
+                            color: white;
+                        }
+                        .level-sum {
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .question {
+        height: 300px;
+        .second {
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            .ask-wrapper {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                .ask {
+                    width: 70%;
+                    height: 50px;
+                    background-image: radial-gradient(at top left, #4b4be7, #090222);
+                    border: 2px solid lightblue;
+                    border-radius: 20%/90%;
+                    position: relative;
+                    color: white;
+                    font-size: 22px;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .ask::before {
+                    content: " ";
+                    display: table;
+                    width: 150px;
+                    border: 2px solid lightblue;
+                    border-radius: 90% 0 0 60%;
+                    position: absolute;
+                    top: 47%;
+                    left: -153px;
+                }
+                .ask::after {
+                    content: " ";
+                    display: table;
+                    width: 150px;
+                    border: 2px solid lightblue;
+                    border-radius: 0 90% 60% 0;
+                    position: absolute;
+                    top: 47%;
+                    left: 100%;
+                }
+            }
+            .answers {
+                width: 100%;
+                height: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                .step {
+                    align-self: center;
+                    color: white;
+                    font-weight: bold;
+                    font-size: 30px;
+                }
+                .answer-block {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    position: relative;
+                    .answer {
+                        width: 30%;
+                        height: 40px;
+                        border: 2px solid lightblue;
+                        border-radius: 40%/70%;
+                        background-image: radial-gradient(at top left, #4b4be7, #090222);
+                        position: relative;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 18px;
+                        .answer-variant {
+                            color: goldenrod;
+                            font-weight: bold;
+                        }
+                        .answer-text {
+                            color: white;
+                        }
+                        span {
+                            margin: 0 3px;
+                        }
+                    }
+                    .answer::before {
+                        content: " ";
+                        display: table;
+                        width: 35%;
+                        border: 2px solid lightblue;
+                        border-radius: 90% 0 0 60%;
+                        position: absolute;
+                        top: 47%;
+                        left: -36.5%;
+                    }
+                    .answer::after {
+                        content: " ";
+                        display: table;
+                        width: 35%;
+                        border: 2px solid lightblue;
+                        border-radius: 0 90% 60% 0;
+                        position: absolute;
+                        top: 47%;
+                        left: 100%;
+                    }
+                    .answer:hover {
+                        opacity: .5;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 770px) {
+    .game {
+        .info {
+            .container {
+                flex-direction: column;
+                justify-content: space-around;
+                .help-part {
+                    width: 100%;
+                    height: 20%;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                }
+                .logo {
+                    width: 100%;
+                    height: 60%;
+                    .comment {
+                        height: 50%;
+                        font-size: 16px;
+                    }
+                }
+                .level-part {
+                    width: 100%;
+                    height: 20%;
+                    display: flex;
+                    justify-content: center;
+                    .level-content {
+                        padding: 0;
+                        width: 200px;
+                        height: 70px;
+                        border: 1px solid goldenrod;
+                        overflow: scroll;
+                        .level {
+                            display: flex;
+                            justify-content: center;
+                        }
+                        .level-active {
+                            background-position: center;
+                        }
+                    }
+                }
+            }
+        }
+        .question {
+            .second {
+                .ask-wrapper {
+                    height: 120px;
+                    .ask {
+                        height: 80px;
+                        font-size: 18px;
+                    }
+                    .ask::before {
+                        display: none;
+                    }
+                    .ask::after {
+                        display: none;
+                    }
+                }
+                .answers {
+                    .answer-block {
+                        .answer {
+                            width: 40%;
+                        }
+                        .answer::before {
+                            display: none;
+                        }
+                        .answer::after {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .game {
+        .info {
+            .first {
+                .logo {
+                    .comment {
+                        height: 80%;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        .question {
+            .second {
+                .ask-wrapper {
+                    height: 80px;
+                }
+                .answers {
+                    width: 200px;
+                    .step {
+                        display: none;
+                    }
+                    .answer-block {
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        width: 200px;
+                        .answer {
+                            width: 200px;
+                            margin: 2% 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

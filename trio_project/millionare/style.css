@@ -1,0 +1,464 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.game {
+  background-image: url("img/LHc0RaYGI3U.jpg");
+  background-size: cover;
+}
+
+.game .container {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.game .info {
+  height: 340px;
+}
+
+.game .info .first {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.game .info .first .logo {
+  width: 60%;
+  background-image: url("https://www.lifepng.com/wp-content/uploads/2020/06/%D0%BA%D1%82%D0%BE-%D1%85%D0%BE%D1%87%D0%B5%D1%82-%D1%81%D1%82%D0%B0%D1%82%D1%8C-%D0%BC%D0%B8%D0%BB%D0%BB%D0%B8%D0%BE%D0%BD%D0%B5%D1%80%D0%BE%D0%BC-png.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: relative;
+}
+
+.game .info .first .logo .comment {
+  position: absolute;
+  top: 60%;
+  width: 100%;
+  height: 40%;
+  background-color: #0f0f3f;
+  border: 2px solid goldenrod;
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+
+.game .info .first .help-part {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.game .info .first .help-part .help {
+  width: 74px;
+  height: 59px;
+  background-image: url("./img/butt_sprite.webp");
+  border-radius: 45%;
+  border: 3px solid goldenrod;
+}
+
+.game .info .first .help-part .half {
+  background-position: -103px -62px;
+}
+
+.game .info .first .help-part .public {
+  background-position: -2px -62px;
+}
+
+.game .info .first .help-part .friend {
+  background-position: -204px -62px;
+}
+
+.game .info .first .help-part .help:hover {
+  opacity: .5;
+}
+
+.game .info .first .level-part {
+  width: 20%;
+}
+
+.game .info .first .level-part .level-content {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
+  padding-top: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.game .info .first .level-part .level-content .level {
+  font-size: 16px;
+  width: 100%;
+  padding-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.game .info .first .level-part .level-content .level span {
+  display: block;
+  color: goldenrod;
+  margin: 0 4px;
+}
+
+.game .info .first .level-part .level-content :nth-child(1) span {
+  color: white;
+}
+
+.game .info .first .level-part .level-content :nth-child(6) span {
+  color: white;
+}
+
+.game .info .first .level-part .level-content :nth-child(11) span {
+  color: white;
+}
+
+.game .info .first .level-part .level-content .level-active {
+  background-image: url("./img/step_activ.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-weight: bold;
+}
+
+.game .info .first .level-part .level-content .level-active .level-number {
+  color: white;
+}
+
+.game .info .first .level-part .level-content .level-active .level-sum {
+  color: black;
+}
+
+.game .question {
+  height: 300px;
+}
+
+.game .question .second {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.game .question .second .ask-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.game .question .second .ask-wrapper .ask {
+  width: 70%;
+  height: 50px;
+  background-image: radial-gradient(at top left, #4b4be7, #090222);
+  border: 2px solid lightblue;
+  border-radius: 20%/90%;
+  position: relative;
+  color: white;
+  font-size: 22px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.game .question .second .ask-wrapper .ask::before {
+  content: " ";
+  display: table;
+  width: 150px;
+  border: 2px solid lightblue;
+  border-radius: 90% 0 0 60%;
+  position: absolute;
+  top: 47%;
+  left: -153px;
+}
+
+.game .question .second .ask-wrapper .ask::after {
+  content: " ";
+  display: table;
+  width: 150px;
+  border: 2px solid lightblue;
+  border-radius: 0 90% 60% 0;
+  position: absolute;
+  top: 47%;
+  left: 100%;
+}
+
+.game .question .second .answers {
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.game .question .second .answers .step {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.game .question .second .answers .answer-block {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.game .question .second .answers .answer-block .answer {
+  width: 30%;
+  height: 40px;
+  border: 2px solid lightblue;
+  border-radius: 40%/70%;
+  background-image: radial-gradient(at top left, #4b4be7, #090222);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+}
+
+.game .question .second .answers .answer-block .answer .answer-variant {
+  color: goldenrod;
+  font-weight: bold;
+}
+
+.game .question .second .answers .answer-block .answer .answer-text {
+  color: white;
+}
+
+.game .question .second .answers .answer-block .answer span {
+  margin: 0 3px;
+}
+
+.game .question .second .answers .answer-block .answer::before {
+  content: " ";
+  display: table;
+  width: 35%;
+  border: 2px solid lightblue;
+  border-radius: 90% 0 0 60%;
+  position: absolute;
+  top: 47%;
+  left: -36.5%;
+}
+
+.game .question .second .answers .answer-block .answer::after {
+  content: " ";
+  display: table;
+  width: 35%;
+  border: 2px solid lightblue;
+  border-radius: 0 90% 60% 0;
+  position: absolute;
+  top: 47%;
+  left: 100%;
+}
+
+.game .question .second .answers .answer-block .answer:hover {
+  opacity: .5;
+}
+
+@media (max-width: 770px) {
+  .game .info .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .game .info .container .help-part {
+    width: 100%;
+    height: 20%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .game .info .container .logo {
+    width: 100%;
+    height: 60%;
+  }
+  .game .info .container .logo .comment {
+    height: 50%;
+    font-size: 16px;
+  }
+  .game .info .container .level-part {
+    width: 100%;
+    height: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .game .info .container .level-part .level-content {
+    padding: 0;
+    width: 200px;
+    height: 70px;
+    border: 1px solid goldenrod;
+    overflow: scroll;
+  }
+  .game .info .container .level-part .level-content .level {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .game .info .container .level-part .level-content .level-active {
+    background-position: center;
+  }
+  .game .question .second .ask-wrapper {
+    height: 120px;
+  }
+  .game .question .second .ask-wrapper .ask {
+    height: 80px;
+    font-size: 18px;
+  }
+  .game .question .second .ask-wrapper .ask::before {
+    display: none;
+  }
+  .game .question .second .ask-wrapper .ask::after {
+    display: none;
+  }
+  .game .question .second .answers .answer-block .answer {
+    width: 40%;
+  }
+  .game .question .second .answers .answer-block .answer::before {
+    display: none;
+  }
+  .game .question .second .answers .answer-block .answer::after {
+    display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .game .info .first .logo .comment {
+    height: 80%;
+    font-size: 16px;
+  }
+  .game .question .second .ask-wrapper {
+    height: 80px;
+  }
+  .game .question .second .answers {
+    width: 200px;
+  }
+  .game .question .second .answers .step {
+    display: none;
+  }
+  .game .question .second .answers .answer-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 200px;
+  }
+  .game .question .second .answers .answer-block .answer {
+    width: 200px;
+    margin: 2% 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
