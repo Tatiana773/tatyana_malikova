@@ -21,7 +21,8 @@ class App extends Component {
               type,
               category,
             }
-          ]})
+          ]
+        })
         }
         this.onEditItem = (id) => {
           const item = this.state.goods.find((item) => item.id === id)
@@ -44,24 +45,30 @@ class App extends Component {
           
         }
         this.onFilterName = (value) =>{
+          if(value){
+           this.setState({
+            isFiltered: true,
+            filteredGoods: [...this.state.goods].filter((item) => item.name.toLowerCase().includes(value.toLowerCase())
+          )}
+        )
+        }else{
           this.setState({
-            goods: this.state.goods.filter((item) => {
-              if(value !== ' '){
-                return (item.name.toLowerCase().includes(value));
-              }
-              return this.state.goods;
+            ...this.state.goods,
           })
-        })
+        }
         }
         this.onFilterCategory = (value) =>{
-          this.setState({
-            goods: this.state.goods.filter((item) => {
-              if(value !== ' '){
-                return (item.category.toLowerCase().includes(value));
-              }
-              return this.state.goods;
-          })
-        })
+          if(value){
+            this.setState({
+              isFiltered: true,
+             filteredGoods: [...this.state.goods].filter((item) => item.category.toLowerCase().includes(value.toLowerCase())
+           )}
+         )
+         }else{
+           this.setState({
+             ...this.state.goods,
+           })
+         }
         }
         this.onDeleteItem = (id) => {
           this.setState({
@@ -76,6 +83,7 @@ class App extends Component {
         }
         this.state = {
           isAddModalVisible: false,
+          isFiltered:false,
             goods: [
                 {
                   id: uuidv4(),
@@ -126,14 +134,15 @@ class App extends Component {
                     type: 'Мягкий',
                     category: 'столовая',
                   }
-                ]
+                ],
+            filteredGoods: [],
             }
         }
     render() {
             return ( 
                 <div className = 'app'>
                   <GoodsList 
-                  goods = {this.state.goods}
+                  goods = {this.state.isFiltered? this.state.filteredGoods : this.state.goods}
                   onDeleteItem = {this.onDeleteItem}
                   onEditItem = {this.onEditItem}/>
                   <GoodsListButtons onAddClicked = {() =>this.setState({isAddModalVisible: true})}/>

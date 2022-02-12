@@ -21,7 +21,7 @@ export class FilterList extends Component{
             <input onChange = {(event) => {this.props.onFilterName(event.target.value)}}/>
             <p>Сортировать по категории:</p>
             <select onChange = {(event) => {this.props.onFilterCategory(event.target.value)}}>
-                    <option selected disabled>Зона расстановки</option>
+                    <option disabled>Зона расстановки</option>
                     <option>спальня</option>
                     <option>столовая</option>
                     <option>гостинная</option>
